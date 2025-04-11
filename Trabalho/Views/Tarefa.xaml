@@ -1,0 +1,86 @@
+﻿<Window x:Class="Trabalho.Tarefa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabalho"
+        mc:Ignorable="d"
+        Title="Tarefa" Height="450" Width="810" 
+        Background="#D8D8D9">
+    <Grid>
+        <Label Content="TAREFAS" HorizontalAlignment="Center" Height="55" Margin="0,10,0,0" VerticalAlignment="Top" Width="168" 
+               FontSize="30" 
+               FontFamily="Britannic Bold" 
+               Foreground="DarkBlue"/>
+        <Button x:Name="btnCriarTarefa" Content="Criar Tarefa" HorizontalAlignment="Left" Height="67" Margin="310,340,0,0" VerticalAlignment="Top" Width="196" Click="btnCriarTarefa_Click" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20" 
+                Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <GroupBox HorizontalAlignment="Left" Height="244" Header="PRIORITÁRIAS" Margin="603,0,0,0" VerticalAlignment="Center" Width="190" 
+                  FontSize="14" 
+                  FontFamily="Copperplate Gothic Bold" 
+                  Foreground="#2D74E6" 
+                  BorderBrush="#FF48A2E5">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="spPrioritarias" Margin="10,0,8,0"/>
+            </ScrollViewer>
+        </GroupBox>
+        <GroupBox HorizontalAlignment="Left" Height="244" Header="NORMAIS" Margin="213,0,0,0" VerticalAlignment="Center" Width="190" 
+                  FontSize="14" 
+                  FontFamily="Copperplate Gothic Bold" 
+                  Foreground="#2D74E6" 
+                  BorderBrush="#FF48A2E5">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="spNormais" Margin="10,0,8,0"/>
+            </ScrollViewer>
+        </GroupBox>
+        <GroupBox HorizontalAlignment="Left" Height="244" Header="IMPORTANTES" VerticalAlignment="Center" Width="190" 
+                  FontSize="14" 
+                  FontFamily="Copperplate Gothic Bold" 
+                  Foreground="#2D74E6" 
+                  BorderBrush="#FF48A2E5" Margin="408,0,0,0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="spImportantes" Margin="10,0,8,0" />
+            </ScrollViewer>
+        </GroupBox>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Height="31" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" Click="btnVoltar_Click" 
+                Background="#FF5987CF" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="15"
+                Style="{StaticResource Button}" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnAbrirTarefa" Content="Abrir Tarefa" HorizontalAlignment="Left" Height="67" Margin="80,340,0,0" VerticalAlignment="Top" Width="196" Click="btnAbrirTarefa_Click" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnLimparSeleção" Content="Limpar Seleção" HorizontalAlignment="Left" Height="67" Margin="541,339,0,0" VerticalAlignment="Top" Width="196" Click="btnLimparSeleção_Click" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <GroupBox HorizontalAlignment="Left" Height="244" Header="POUCO IMPORTANTES" VerticalAlignment="Center" Width="195" 
+            FontSize="14" 
+            FontFamily="Copperplate Gothic Bold" 
+            Foreground="#2D74E6" 
+            BorderBrush="#FF48A2E5" Margin="10,0,0,0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="spPoucoImportantes" Margin="10,0,8,0"/>
+            </ScrollViewer>
+        </GroupBox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,118 @@
+﻿<Window x:Class="Trabalho.Views.AbrirTarefa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabalho.Views"
+        mc:Ignorable="d"
+        Title="AbrirTarefa" Height="450" Width="800" 
+        Background="#D8D8D9">
+    <Grid>
+        <ComboBox x:Name="cbNivelDeImportancia" HorizontalAlignment="Left" Height="36" Margin="300,293,0,0" VerticalAlignment="Top" Width="176" IsEnabled="False">
+            <ComboBoxItem Content="Prioritária"/>
+            <ComboBoxItem Content="Importante"/>
+            <ComboBoxItem Content="Normal"/>
+            <ComboBoxItem Content="Pouco Importante"/>
+        </ComboBox>
+        <Label Content="Nível de Importância:" HorizontalAlignment="Center" Height="26" Margin="0,261,0,0" VerticalAlignment="Top" Width="216" 
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="20" Margin="152,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" IsEnabled="False"/>
+        <Label Content="Título:" HorizontalAlignment="Left" Height="30" Margin="63,147,0,0" VerticalAlignment="Top" Width="70" 
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <Label Content="TAREFA" HorizontalAlignment="Center" Height="40" Margin="0,10,0,0" VerticalAlignment="Top" Width="158" 
+               FontFamily="Britannic Bold" 
+               FontSize="30" 
+               Foreground="DarkBlue"/>
+        <Label Content="Adicionar Alerta:" HorizontalAlignment="Left" Height="24" Margin="52,261,0,0" VerticalAlignment="Top" Width="175" 
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <Label Content="Repetir:" HorizontalAlignment="Left" Height="24" Margin="586,261,0,0" VerticalAlignment="Top" Width="174" 
+              FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <ComboBox x:Name="cbRepetir" HorizontalAlignment="Left" Height="36" Margin="546,293,0,0" VerticalAlignment="Top" Width="175" IsEnabled="False" >
+            <ComboBoxItem Content="Diário"/>
+            <ComboBoxItem Content="Semanal"/>
+        </ComboBox>
+        <Label Content="Data Fim:" HorizontalAlignment="Left" Height="30" Margin="421,136,0,0" VerticalAlignment="Top" Width="100"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <DatePicker x:Name="dpDataInicio" HorizontalAlignment="Left" Height="24" Margin="521,104,0,0" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.5,0.5" IsEnabled="False"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Height="30" Margin="114,105,0,0" VerticalAlignment="Top" Width="46" 
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6" />
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="20" Margin="152,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" IsEnabled="False"/>
+        <Label Content="Descrição:" HorizontalAlignment="Left" Height="30" Margin="31,192,0,0" VerticalAlignment="Top" Width="113" 
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <TextBox x:Name="txtDescricao" HorizontalAlignment="Left" Height="59" Margin="152,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" IsEnabled="False"/>
+        <DatePicker x:Name="dpDataFim" HorizontalAlignment="Left" Height="25" Margin="521,141,0,0" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.5,0.5" IsEnabled="False"/>
+        <Label Content="Data Início:" HorizontalAlignment="Left" Height="30" Margin="403,101,0,0" VerticalAlignment="Top" Width="113" 
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Height="40" Margin="492,363,0,0" VerticalAlignment="Top" Width="130" Click="btnEditar_Click"
+                    Foreground="White" 
+                    FontFamily="Cascadia Code SemiBold" 
+                    FontSize="20"
+                    Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnConcluir" Content="Concluir" HorizontalAlignment="Center" Height="40" Margin="0,363,0,0" VerticalAlignment="Top" Width="128" Click="btnConcluir_Click"
+                    Foreground="White" 
+                    FontFamily="Cascadia Code SemiBold" 
+                    FontSize="20"
+                    Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="40" Margin="648,363,0,0" VerticalAlignment="Top" Width="129" Click="btnEliminar_Click"
+                    Foreground="White" 
+                    FontFamily="Cascadia Code SemiBold" 
+                    FontSize="20"
+                    Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Estado:" HorizontalAlignment="Left" Height="30" Margin="521,15,0,0" VerticalAlignment="Top" Width="113" 
+            FontSize="16" 
+            FontFamily="Copperplate Gothic Bold"  
+            Foreground="#2D74E6"/>
+        <TextBox x:Name="txtEstado" HorizontalAlignment="Left" Height="20" Margin="598,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" IsEnabled="False"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Height="37" Margin="33,30,0,0" VerticalAlignment="Top" Width="111" Click="btnGuardar_Click"
+            Foreground="White" 
+            FontFamily="Cascadia Code SemiBold" 
+            FontSize="20"
+            Style="{StaticResource Button}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <CheckBox x:Name="A_cb" Content="Antecipação" HorizontalAlignment="Left" Margin="90,328,0,0" VerticalAlignment="Top" Checked="A_cb_check" Unchecked="A_cb_un"
+               FontSize="14" 
+               FontFamily="Copperplate Gothic Bold"/>
+        <CheckBox x:Name="Nr" Content="Não realização" HorizontalAlignment="Left" Margin="90,308,0,0" VerticalAlignment="Top"
+               FontSize="14" 
+               FontFamily="Copperplate Gothic Bold"/>
+        <Label x:Name="tempo_label" Content="Quanto tempo antes:" HorizontalAlignment="Left" Margin="64,353,0,0" VerticalAlignment="Top" FontSize="16" 
+               FontFamily="Copperplate Gothic Bold" Foreground="#2D74E6"/>
+        <TextBox x:Name="tempo_tb" HorizontalAlignment="Left" Margin="118,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_horas" Content="Horas:" HorizontalAlignment="Left" Margin="53,377,0,0" VerticalAlignment="Top" FontSize="14" 
+               FontFamily="Copperplate Gothic Bold"/>
+        <Label x:Name="label_min" Content="Minutos:" HorizontalAlignment="Left" Margin="39,401,0,0" VerticalAlignment="Top" FontSize="14" 
+               FontFamily="Copperplate Gothic Bold"/>
+        <TextBox x:Name="tempo_minutos" HorizontalAlignment="Left" Margin="120,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

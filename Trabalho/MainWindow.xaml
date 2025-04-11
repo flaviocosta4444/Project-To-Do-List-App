@@ -1,0 +1,70 @@
+﻿<Window x:Class="Trabalho.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabalho"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850" 
+        Background="#D8D8D9">
+    <Grid>
+        <Button x:Name="BtnTarefas" Content="Tarefas" Margin="26,21,610,374" Click="BtnTarefas_Click" 
+                Foreground="White" 
+                FontFamily="Cascadia Code Semibold" 
+                FontSize="20"
+                Style="{StaticResource Button}" 
+                Background="#FF2259B0" 
+                Opacity="0.85" 
+                BorderBrush="{x:Null}"/>
+        <Button x:Name="BtnPerfil" Content="Perfil" Margin="76,119,557,276" Click="BtnPerfil_Click"                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" 
+                Background="#FF2259B0" 
+                Opacity="0.85" 
+                BorderBrush="{x:Null}"/>
+        <Button x:Name="BtnCalendario" Content="Calendário" Margin="24,218,610,177" Click="BtnCalendario_Click" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" 
+                Background="#FF2259B0" 
+                Opacity="0.85" 
+                BorderBrush="{x:Null}"/>
+        <Button x:Name="BtnAdicionarAlerta" Content="Adicionar Alerta" Margin="76,317,557,78" Click="BtnAdicionarAlerta_Click" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" 
+                Background="#FF2259B0" 
+                Opacity="0.85" 
+                BorderBrush="{x:Null}"/>
+        <GroupBox Header="Tarefas do dia" Margin="420,119,159,140" 
+                  Foreground="#2D74E6" 
+                  FontSize="18" 
+                  FontFamily="Copperplate Gothic Light">
+            <StackPanel x:Name="spTarefasDoDia" Margin="4,0,10,0" Height="170"/>
+        </GroupBox>
+        <Button x:Name="BtnConcluir" Content="Concluir" Margin="668,426,25,9" Click="BtnConcluir_Click" 
+                Background="#FF5987CF" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" 
+                BorderBrush="{x:Null}"/>
+
+        <StatusBar Margin="26,414,427,10" 
+                   Background="#D8D8D9" 
+                   BorderThickness="2" 
+                   BorderBrush="#FFB5C5E5"/>
+        <StatusBarItem Content="Sem registo de novos alertas" Margin="32,415,421,9" 
+                       Foreground="#48A2E5" 
+                       FontFamily="Copperplate Gothic Light" 
+                       FontSize="16"/>
+        <TextBlock x:Name="tb_data" HorizontalAlignment="Left" Margin="746,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="104" 
+                   FontSize="10" 
+                   Foreground="#48A2E5" 
+                   FontFamily="Copperplate Gothic Light"/>
+
+    </Grid>
+</Window>

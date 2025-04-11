@@ -1,0 +1,44 @@
+﻿<Window x:Class="Trabalho.Views.Perfil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabalho.Views"
+        mc:Ignorable="d"
+        Title="Perfil" Height="450" Width="800"
+        Background="#D8D8D9">
+    <Grid RenderTransformOrigin="0.494,0.424">
+        <Label Content="EDITAR PERFIL" HorizontalAlignment="Center" Height="36" Margin="0,19,0,0" VerticalAlignment="Top" Width="236" 
+               FontSize="30" 
+               FontFamily="Britannic Bold"  Foreground="DarkBlue"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Height="37" Margin="192,73,0,0" VerticalAlignment="Top" Width="80"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Height="37" Margin="192,115,0,0" VerticalAlignment="Top" Width="80"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold" 
+               Foreground="#2D74E6"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="27" Margin="272,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="27" Margin="272,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <StackPanel Orientation="Vertical" Margin="250,188,268,36">
+            <TextBlock x:Name="tbNomeFicheiro" Text="[...]" HorizontalAlignment="Center" />
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Height="140" Width="161" >
+                <Image x:Name="imgFotografia" Stretch="Fill" Margin="-1,1,-1,1"/>
+            </Border>
+            <Button Content="Mudar foto" Width="110" Click="Button_Click" 
+                    Background="#FF5987CF" 
+                    Foreground="White" 
+                    FontFamily="Cascadia Code SemiBold" 
+                    FontSize="15"
+                    Style="{StaticResource Button}" Height="34" Opacity="0.7"/>
+        </StackPanel>
+        <Button x:Name="btn_Guardar" Content="Guardar" HorizontalAlignment="Left" Height="50" Margin="647,361,0,0" VerticalAlignment="Top" Width="126" Click="btnGuardar_Click" 
+                Background="#FF5987CF" 
+                Foreground="White" 
+                FontFamily="Cascadia Code SemiBold" 
+                FontSize="20"
+                Style="{StaticResource Button}" 
+                BorderBrush="{x:Null}"/>
+    </Grid>
+</Window>

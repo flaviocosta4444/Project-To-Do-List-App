@@ -1,0 +1,24 @@
+IDA: 1, IDT: 1, Descricao: 2
+IDA: 1, IDT: 1, Descricao: 12323131
+IDA: 1, IDT: 121, Descricao: 12312
+IDA: 1, IDT: yah, Descricao: ah
+ID: 1, IDT: 1, Descricao: 12
+ID: 2, IDT: 1, Descricao: 12, DataHoraAlerta: 1/1/0001 12:00:00 AM
+ID: 3, IDT: 1, Descricao: 1, DataHoraAlerta: 1/1/0001 12:00:00 AM
+ID: 4, IDT: 1, Descricao: 1, DataHoraAlerta: 1/1/0001 12:00:00 AM
+ID: 5, IDT: 1, Descricao: 1, DataHoraAlerta: 1/1/0001 12:00:00 AM
+ID: 1, IDT: 2, Descricao: 1, DataHoraAlertaA: 1/1/0001 12:00:00 AM
+ID: 1, IDT: 2, Descricao: 1, DataHoraAlertaA: 5/28/2024 10:59:00 PM
+ID: 2, IDT: 2, Descricao: Alertas, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 3, IDT: 2, Descricao: Alertas, DataHoraAlertaA: 04/06/2024 05:42:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 4, IDT: 2, Descricao: Alertas, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 06/06/2024 00:00:00
+ID: 5, IDT: 3, Descricao: teste2222, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 13/06/2024 00:00:00
+ID: 6, IDT: 4, Descricao: 333, DataHoraAlertaA: 04/06/2024 05:42:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 7, IDT: 4, Descricao: 333, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 12/06/2024 00:00:00
+ID: 8, IDT: 1, Descricao: teste111, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 9, IDT: 1, Descricao: teste111, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 10, IDT: 1, Descricao: teste111, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 11, IDT: 1, Descricao: teste11, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 12, IDT: 1, Descricao: teste11, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 13, IDT: 1, Descricao: teste11, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00
+ID: 14, IDT: 1, Descricao: teste11, DataHoraAlertaA: 01/01/0001 00:00:00, DataHoraAlertaN: 01/01/0001 00:00:00

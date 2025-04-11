@@ -1,0 +1,58 @@
+﻿<Window x:Class="Trabalho.Views.Alerta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabalho.Views"
+        mc:Ignorable="d"
+        Title="Alerta" Height="450" Width="800"
+        Background="#D8D8D9">
+    <Grid>
+        <Label Content="ADICIONAR ALERTA" HorizontalAlignment="Center" Height="48" Margin="0,29,0,0" VerticalAlignment="Top" Width="272" 
+               FontSize="30" 
+               FontFamily="Britannic Bold" 
+               Foreground="DarkBlue"/>
+        <Label Content="ID da Tarefa:" HorizontalAlignment="Left" Height="37" Margin="116,117,0,0" VerticalAlignment="Top" Width="148"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  
+               Foreground="#2D74E6"/>
+        <TextBox x:Name="ID_Alerta_tb" HorizontalAlignment="Left" Height="28" Margin="269,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" TextChanged="ID_Alerta_tb_TextChanged"/>
+        <Button Content="Adicionar" HorizontalAlignment="Left" Margin="614,118,0,0" VerticalAlignment="Top" Click="Button_Click_1" RenderTransformOrigin="3.443,-4.033"
+            Foreground="White" 
+            FontFamily="Cascadia Code SemiBold" 
+            FontSize="20"
+            Style="{StaticResource Button}" BorderBrush="{x:Null}" Height="36" Width="136">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2259B0" Opacity="0.85"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Descrição:" HorizontalAlignment="Left" Margin="115,0,0,0" VerticalAlignment="Center"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"  Foreground="#2D74E6"/>
+        <TextBox x:Name="Descricao_tb" HorizontalAlignment="Left" Margin="262,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="178" Height="83"/>
+        <CheckBox x:Name="Email_cb" Content="Email" HorizontalAlignment="Left" Margin="88,307,0,0" VerticalAlignment="Top" Checked="Email_check" FontSize="16" 
+               FontFamily="Copperplate Gothic Bold" />
+        <CheckBox x:Name="Windows_cb" Content="Windows" HorizontalAlignment="Left" Margin="88,360,0,0" VerticalAlignment="Top" Checked="Windows_check"
+                  FontSize="16" 
+                  FontFamily="Copperplate Gothic Bold" />
+        <CheckBox x:Name="Antecipacao_cb" Content="Antecipação" HorizontalAlignment="Left" Margin="262,307,0,0" VerticalAlignment="Top" Checked="Antecipação" Unchecked="Antecipacao_unchecked" 
+                  FontSize="16" 
+                  FontFamily="Copperplate Gothic Bold" />
+        <CheckBox x:Name="NaoRealizacao_cb" Content="Não realização" HorizontalAlignment="Left" Margin="262,360,0,0" VerticalAlignment="Top" Checked="NaoRealizacao_check" 
+                  FontSize="16" 
+                  FontFamily="Copperplate Gothic Bold" />
+        <Label x:Name="tempo_label" Content="Quanto tempo antes:" HorizontalAlignment="Left" Margin="539,259,0,0" VerticalAlignment="Top"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold"
+               Foreground="#2D74E6"/>
+        <TextBox x:Name="tempo_tb" HorizontalAlignment="Left" Margin="630,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_horas" Content="Horas:" HorizontalAlignment="Left" Margin="526,300,0,0" VerticalAlignment="Top"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold" />
+        <Label x:Name="label_min" Content="Minutos:" HorizontalAlignment="Left" Margin="522,337,0,0" VerticalAlignment="Top"
+               FontSize="16" 
+               FontFamily="Copperplate Gothic Bold" />
+        <TextBox x:Name="tempo_minutos" HorizontalAlignment="Left" Margin="629,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
